@@ -8,7 +8,7 @@ Here's an [article](https://transitivebullsh.it/javascript-dev-tools-in-2022#823
 
 > CLI for creating reusable, modern React libraries using Rollup and create-react-app.
 
-[![NPM](https://img.shields.io/npm/v/create-react-library.svg)](https://www.npmjs.com/package/create-react-library) [![Build Status](https://travis-ci.com/transitive-bullshit/create-react-library.svg?branch=master)](https://travis-ci.com/transitive-bullshit/create-react-library) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/create-react-library.svg)](https://www.npmjs.com/package/create-react-library) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Intro
 
@@ -27,6 +27,7 @@ Here's an [article](https://transitivebullsh.it/javascript-dev-tools-in-2022#823
 - [Jest](https://facebook.github.io/jest/) for testing
 - Supports complicated peer-dependencies
 - Supports CSS modules
+- React 18 compatibility
 - Optional support for TypeScript
 - Sourcemap creation
 - Thousands of public modules created
@@ -35,7 +36,7 @@ Here's an [article](https://transitivebullsh.it/javascript-dev-tools-in-2022#823
 
 ## Install globally
 
-This package requires `node >= 10`.
+This package requires `node >= 14`.
 
 ```bash
 npm install -g create-react-library
@@ -110,7 +111,7 @@ This creates a production build of the example `create-react-app` that showcases
 
 ## Use with React Hooks
 
-If you use [react-hooks](https://reactjs.org/docs/hooks-intro.html) in your project, when you debug your example you may run into an exception [Invalid Hook Call Warning](https://reactjs.org/warnings/invalid-hook-call-warning.html). This [issue](https://github.com/facebook/react/issues/14257) explains the reason, your lib and example use a different instance, one solution is rewrite the `react` path in your example's `package.json` to 'file:../node_modules/react' or 'link:../node_modules/react'.
+This library is fully compatible with React hooks.
 
 ## Examples
 

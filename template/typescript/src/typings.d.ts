@@ -15,6 +15,26 @@ declare module '*.less' {
   export default content;
 }
 
+declare module '*.module.css' {
+  const classes: { [key: string]: string }
+  export default classes
+}
+
+declare module '*.module.scss' {
+  const classes: { [key: string]: string }
+  export default classes
+}
+
+declare module '*.module.sass' {
+  const classes: { [key: string]: string }
+  export default classes
+}
+
+declare module '*.module.less' {
+  const classes: { [key: string]: string }
+  export default classes
+}
+
 interface SvgrComponent extends React.FunctionComponent<React.SVGAttributes<SVGElement>> {}
 
 declare module '*.svg' {
