@@ -1,12 +1,6 @@
-# 2022 Update
-
-This tool is no longer actively maintained. I suggest using either [tsup](https://github.com/egoist/tsup), [tsdx](https://github.com/jaredpalmer/tsdx), or [microbundle](https://github.com/developit/microbundle).
-
-Here's an [article](https://transitivebullsh.it/javascript-dev-tools-in-2022#823feddaa1bb4edea19042852b0a5b54) I wrote in April 2022 which should help you decide between these different tools.
-
 # create-react-library
 
-> CLI for creating reusable, modern React libraries using Rollup and create-react-app.
+> CLI for creating reusable, modern React 18 libraries using Rollup and create-react-app.
 
 [![NPM](https://img.shields.io/npm/v/create-react-library.svg)](https://www.npmjs.com/package/create-react-library) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -27,8 +21,8 @@ Here's an [article](https://transitivebullsh.it/javascript-dev-tools-in-2022#823
 - [Jest](https://facebook.github.io/jest/) for testing
 - Supports complicated peer-dependencies
 - Supports CSS modules
-- React 18 compatibility
-- Optional support for TypeScript
+- **React 18+ compatibility**
+- **Modern TypeScript support**
 - Sourcemap creation
 - Thousands of public modules created
 - Thorough documentation :heart_eyes:
@@ -109,9 +103,14 @@ npm run deploy
 
 This creates a production build of the example `create-react-app` that showcases your library and then runs `gh-pages` to deploy the resulting bundle.
 
-## Use with React Hooks
+## React 18 and TypeScript Support
 
-This library is fully compatible with React hooks.
+This library is fully compatible with React 18 and modern TypeScript features. Key enhancements include:
+
+- React 18 peer dependencies
+- Support for TypeScript 4.9+
+- Modern TypeScript JSX transformations
+- Proper CSS modules typing
 
 ## Examples
 
